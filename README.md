@@ -1,1 +1,1 @@
-[# Posmotri v okno](https://github.com/tlfake/posmotri-v-okno-fd)
+https://github.com/tlfake/posmotri-v-okno-fd
