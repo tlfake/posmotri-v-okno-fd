@@ -87,9 +87,6 @@ ol {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  max-width: 100%;
-  min-width: 0;
-  min-height: 0;
 }
 
 .search-form {
@@ -208,8 +205,6 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-  max-width: 100%;
 }
 
 .button:hover {
@@ -232,7 +227,6 @@ ol {
 .more-button {
   width: 399px;
   height: 34px;
-  min-height: 34px;
   flex-shrink: 0;
 }
 
@@ -345,10 +339,7 @@ ol {
   flex-direction: column;
   gap: 6px;
   padding: 2px;
-  max-width: calc(100% - 194px);
   min-width: 0;
-  width: calc(100% - 194px);
-  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -360,12 +351,9 @@ ol {
   color: #fff;
   line-height: 1;
   margin: 0;
-  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .content__video-card-description {
@@ -380,9 +368,6 @@ ol {
   line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 .content__video-card-thumbnail {
@@ -391,8 +376,4 @@ ol {
   object-fit: cover;
   object-position: center;
   flex-shrink: 0;
-  min-width: 194px;
-  min-height: 103px;
-  max-width: 194px;
-  max-height: 103px;
 }
