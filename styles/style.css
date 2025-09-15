@@ -6,6 +6,7 @@
 
 html {
   block-size: 100%;
+  overflow-x: hidden;
 }
 
 .page {
@@ -19,6 +20,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -60,6 +63,9 @@ ol {
   width: 1140px;
   gap: 30px;
   align-items: flex-end;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .result {
@@ -72,6 +78,8 @@ ol {
   height: 386px;
   position: relative;
   margin-bottom: 16px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .result__video {
@@ -79,6 +87,9 @@ ol {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
 }
 
 .search-form {
@@ -118,6 +129,8 @@ ol {
   font-size: 18px;
   padding: 2.5px 0;
   appearance: none;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .search-form__textfield::placeholder {
@@ -166,12 +179,14 @@ ol {
 .content__list-container {
   height: 298px;
   overflow-y: auto;
+  overflow-x: hidden;
   padding-right: 2px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   position: relative;
   max-width: 399px;
+  box-sizing: border-box;
 }
 
 .content__list {
@@ -193,6 +208,8 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .button:hover {
@@ -318,6 +335,8 @@ ol {
   align-items: flex-start;
   gap: 0;
   width: 100%;
+  min-height: 103px;
+  flex-shrink: 0;
 }
 
 .content__video-card-description-container {
@@ -326,6 +345,11 @@ ol {
   flex-direction: column;
   gap: 6px;
   padding: 2px;
+  max-width: calc(100% - 194px);
+  min-width: 0;
+  width: calc(100% - 194px);
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .content__video-card-title {
@@ -336,10 +360,12 @@ ol {
   color: #fff;
   line-height: 1;
   margin: 0;
-  max-width: 196px;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .content__video-card-description {
@@ -354,6 +380,9 @@ ol {
   line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .content__video-card-thumbnail {
@@ -362,4 +391,8 @@ ol {
   object-fit: cover;
   object-position: center;
   flex-shrink: 0;
+  min-width: 194px;
+  min-height: 103px;
+  max-width: 194px;
+  max-height: 103px;
 }
