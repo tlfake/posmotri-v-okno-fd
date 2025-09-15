@@ -171,6 +171,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   position: relative;
+  max-width: 399px;
 }
 
 .content__list {
@@ -335,7 +336,7 @@ ol {
   color: #fff;
   line-height: 1;
   margin: 0;
-  max-width: 200px;
+  max-width: 196px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
